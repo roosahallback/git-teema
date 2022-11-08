@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotisivut</title>
+    <link rel="stylesheet" href="tyylit.css">
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+</head>
+
+<body>
+<b> <h1><img src="kuvat/aaebkopio.png" style= max-height:70px> Tervetuloa! <img src="kuvat/aaeb112fc7750b046662a7f788f230df.png" style= max-height:70px> </h1></b> 
+
+    <p> Olet löytänyt tiesi kotisivuilleni. Täältä löydät tietoa minusta sekä muutaman linkin sosiaaliseen mediaani. :)</p>
+    <center><img src="kuvat/IMG_20210601_132356_379.jpg" style= max-width:300px> <img src="kuvat/Snapchat-1399723854.jpg" style= max-height:300px> <img src="kuvat/IMG_20210620_094401_792.jpg" style= max-width:300px> </center>
+    <br>
+    <hr>
+   <br><br>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Tietoja')" id="defaultOpen">Tietoja</button>
+  <button class="tablinks" onclick="openCity(event, 'Somet')">Somet</button>
+
+</div>
+
+<div id="Tietoja" class="tabcontent">
+  <h3>Tietoja</h3>
+  <p> Hei vaan :] 
+    <br> Hyvää työtä sivujeni löytämisessä. Tässä osiossa kerron hieman itsestäni. 
+    <br> Olen 17-vuotias <a href="https://www.esedu.fi/tutkintokoulutus/tietoverkkoasentaja/"> TiVi-</a>alan opiskelija, ja opiskelen Mikkelin Otavankadulla ensimmäistä vuottani.
+    <br> Harrastuksiini kuuluu muun muassa  piirtäminen <a href="https://cdn.pixabay.com/photo/2017/01/09/07/05/graphics-tablet-1964816_1280.jpg"> piirtöpöydällä</a> ja kirjoittaminen. Pelaan myös välillä PS4:llä, mutta en kovin pakkomielteisesti. Lempipelejäni ovat Red Dead Redemption 2 ja Titanfall 2. 
+    <br> Usein kuitenkin vain pyörin somessa tai piirrän samalla kun kuuntelen podcasteja/youtube-videoita. 
+    <br><img src="kuvat/teddy-889814_1920.jpg" style="max-height: 240px;"> </p>
+</div>
+
+<div id="Somet" class="tabcontent">
+    <h3>Muutamia somejani</h3>
+    <p> <a href="https://www.instagram.com/rat_kings_stepbro/"> <img src="kuvat/insta2.png" style="max-height: 85px;"> </a> 
+    <br> <a href="https://open.spotify.com/user/roosa.hallback?si=e792bd70effb46eb"> <img src="kuvat/spotify.png" style="max-height: 100px;"></a>
+    <br>Discord id: klaus#0451 
+    <br> <img src="kuvat/plush-teddy-bear-1082525_1920.jpg" style="max-height: 240px;"> </p> 
+</div>
+
+
+   
+</body>
+</html>
